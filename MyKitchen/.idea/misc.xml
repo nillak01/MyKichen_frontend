@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3075" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.3075" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/drawable/ic_baseline_house_24.xml" value="0.3075" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/drawable/ic_bt_add.xml" value="0.3075" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/drawable/ic_btn_back.xml" value="0.3075" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/drawable/ic_btn_back_fr.xml" value="0.3075" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3075" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/drawable/ic_normal_back.xml" value="0.2995" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/drawable/ic_recycler_back.xml" value="0.3075" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/add_device_fragment.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/add_products_fragment.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/device_item.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/my_products_fragment.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/mydevice_fragment.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/mykitchen_fragment.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/myrecipelist_fragment.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/myrecipes_fragment.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/products_item.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/recipe_fragment.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/recipe_item.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/recipelist_fragment.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/recipes_fragment.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/spinner_item.xml" value="0.358695652173913" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

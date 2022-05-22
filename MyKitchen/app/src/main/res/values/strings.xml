@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyKitchen</string>
+    <string name="recipes">Рецепты</string>
+    <string name="my_kichen">Моя кухня</string>
+    <string name="my_recipes">Мои рецепты</string>
+    <string name="add">Добавить</string>
+    <string name="save">Сохранить</string>
+</resources>
