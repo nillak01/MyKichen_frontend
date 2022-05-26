@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="fragment.AddProductFragment"
+    android:background="@color/pink_norm">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_back_to_main"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:layout_gravity="left|top"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_product"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textColor="@color/grey_good"
+        android:background="@color/pink_norm"
+        android:padding="6dp"
+        android:textStyle="bold"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="572dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_margin="12dp"
+            android:textColor="@color/black"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/sp_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вес:"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_margin="12dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/add_weight"/>
+
+        <Button
+            android:id="@+id/btn_add_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="12dp"
+            android:background="@drawable/ic_btn_back"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@color/grey_good"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -7,14 +7,13 @@
 
 
     <TextView
-        android:id="@+id/tv_device_name"
+        android:id="@+id/tv_my_recipe_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="6dp"
         android:textColor="@color/black"
         android:textSize="18sp" />
-
 
 
 </LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink_norm"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:context=".MyKitchenActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_back_to_main"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/ic_baseline_arrow_back_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textColor="@color/grey_good"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingBottom="100dp"/>
+
+        <Button
+            android:id="@+id/btn_my_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/ic_btn_back"
+            android:gravity="center"
+            android:text="@string/my_device"
+            android:textColor="@color/grey_good"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_my_products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/ic_btn_back"
+            android:gravity="center"
+            android:text="@string/my_products"
+            android:textColor="@color/grey_good"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

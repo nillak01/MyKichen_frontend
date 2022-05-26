@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mykitchen">
 
-
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,11 +10,27 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyKitchen">
+        android:theme="@style/Theme.MyKitchen"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MyProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyDeviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyKitchenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AllRecipeActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="locked"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="locked">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

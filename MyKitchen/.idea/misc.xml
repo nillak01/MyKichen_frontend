@@ -12,16 +12,31 @@
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3075" />
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/drawable/ic_normal_back.xml" value="0.2995" />
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/drawable/ic_recycler_back.xml" value="0.3075" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/activity_all_recipe.xml" value="0.18342391304347827" />
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/activity_my_device.xml" value="0.18342391304347827" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/activity_my_kitchen.xml" value="0.18342391304347827" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/activity_my_products.xml" value="0.18342391304347827" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/activity_my_recipe.xml" value="0.18342391304347827" />
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/add_device_fragment.xml" value="0.358695652173913" />
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/add_products_fragment.xml" value="0.358695652173913" />
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/device_item.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/fragment_add_device.xml" value="0.16" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/fragment_add_product.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/fragment_all_recipe_list.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/fragment_my_device.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/fragment_my_kichen.xml" value="0.22" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/fragment_my_products.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/fragment_my_recipe.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/fragment_my_recipe_list.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/fragment_recipe.xml" value="0.358695652173913" />
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/my_products_fragment.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/my_recipe_item.xml" value="0.18342391304347827" />
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/mydevice_fragment.xml" value="0.358695652173913" />
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/mykitchen_fragment.xml" value="0.358695652173913" />
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/myrecipelist_fragment.xml" value="0.358695652173913" />
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/myrecipes_fragment.xml" value="0.358695652173913" />
-        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/products_item.xml" value="0.358695652173913" />
+        <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/products_item.xml" value="0.25" />
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/recipe_fragment.xml" value="0.358695652173913" />
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/recipe_item.xml" value="0.358695652173913" />
         <entry key="..\:/Android studio projects/MyKitchen/app/src/main/res/layout/recipelist_fragment.xml" value="0.358695652173913" />
