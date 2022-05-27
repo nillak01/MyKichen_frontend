@@ -146,7 +146,7 @@ public class ProductsApiVolley implements ProductsApi{
 
                         //стоит обновлять локально
                         //но пока так
-                        fillProducts();
+                        fillProductsByMy(true);
                     }
                 },
 

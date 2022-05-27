@@ -12,8 +12,14 @@ import com.android.volley.toolbox.Volley;
 import com.example.mykitchen.MyProductsActivity;
 import com.example.mykitchen.MyRecipeActivity;
 import com.example.mykitchen.NoDB.NoDB;
+import com.example.mykitchen.domain.Device;
+import com.example.mykitchen.domain.Products;
 import com.example.mykitchen.domain.ProductsForRecipe;
+import com.example.mykitchen.domain.Recipe;
+import com.example.mykitchen.domain.mapper.DeviceMapper;
 import com.example.mykitchen.domain.mapper.ProductsForRecipeMapper;
+import com.example.mykitchen.domain.mapper.ProductsMapper;
+import com.example.mykitchen.domain.mapper.RecipeMapper;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -35,7 +41,7 @@ public class ProductsForRecipeApiVolley implements ProductsForRecipeApi{
 
         RequestQueue requestQueue = Volley.newRequestQueue(context);
 
-        String url = BASE_URL + "/device_for_recipe";
+        String url = BASE_URL + "/products_for_recipe";
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(
                 Request.Method.GET,
@@ -53,7 +59,11 @@ public class ProductsForRecipeApiVolley implements ProductsForRecipeApi{
 
                                 JSONObject jsonObject = response.getJSONObject(i);
 
-                                ProductsForRecipe productsForRecipe = new ProductsForRecipeMapper().productsForRecipeFromJson(jsonObject);
+                                Recipe recipe = new RecipeMapper().recipeFromPFRJson(jsonObject);
+
+                                Products products = new ProductsMapper().productsFromPFRJson(jsonObject);
+
+                                ProductsForRecipe productsForRecipe = new ProductsForRecipeMapper().productsForRecipeFromJson(jsonObject, recipe, products);
                                 NoDB.PRODUCTS_FOR_RECIPE_LIST.add(productsForRecipe);
                             }
                             Log.d("PRODUCTS_F_R_LIST", NoDB.PRODUCTS_FOR_RECIPE_LIST.toString());
@@ -103,7 +113,11 @@ public class ProductsForRecipeApiVolley implements ProductsForRecipeApi{
 
                                 JSONObject jsonObject = response.getJSONObject(i);
 
-                                ProductsForRecipe productsForRecipe = new ProductsForRecipeMapper().productsForRecipeFromJson(jsonObject);
+                                Recipe recipe = new RecipeMapper().recipeFromDFRJson(jsonObject);
+
+                                Products products = new ProductsMapper().productsFromJson(jsonObject);
+
+                                ProductsForRecipe productsForRecipe = new ProductsForRecipeMapper().productsForRecipeFromJson(jsonObject, recipe, products);
                                 NoDB.PRODUCTS_FOR_RECIPE_LIST.add(productsForRecipe);
                             }
 

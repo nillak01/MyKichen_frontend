@@ -12,6 +12,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.mykitchen.MainActivity;
 import com.example.mykitchen.MyDeviceActivity;
+import com.example.mykitchen.MyProductsActivity;
 import com.example.mykitchen.MyRecipeActivity;
 import com.example.mykitchen.NoDB.NoDB;
 import com.example.mykitchen.domain.Device;
@@ -111,6 +112,7 @@ public class DeviceApiVolley implements DeviceApi{
                                 Device device = new DeviceMapper().deviceFromJson(jsonObject);
                                 NoDB.DEVICE_LIST.add(device);
                             }
+                            ((MyDeviceActivity)context).updateAdapter();
                             Log.d("DEVICE_LIST", NoDB.DEVICE_LIST.toString());
                         } catch (JSONException e) {
 
@@ -149,7 +151,7 @@ public class DeviceApiVolley implements DeviceApi{
 
                         //стоит обновлять локально
                         //но пока так
-                        fillDevice();
+                        fillDeviceByMy(true);
                     }
                 },
 

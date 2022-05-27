@@ -19,5 +19,5 @@ public class NoDB {
     public static final List<Products> PRODUCTS_LIST = new ArrayList<>();
     public static final List<ProductsForRecipe> PRODUCTS_FOR_RECIPE_LIST = new ArrayList<>();
     public static final List<DeviceForRecipe> DEVICE_FOR_RECIPE_LIST = new ArrayList<>();
-    public static final List<DeviceForRecipe> DEVICE_FOR_RECIPE_LIST_BY_RECIPEID = new ArrayList<>();
+    public static final List<Recipe> MY_RECIPE_LIST = new ArrayList<>();
 }

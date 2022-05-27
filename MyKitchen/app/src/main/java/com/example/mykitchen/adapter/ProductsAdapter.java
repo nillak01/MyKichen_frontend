@@ -1,17 +1,21 @@
 package com.example.mykitchen.adapter;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mykitchen.NoDB.NoDB;
 import com.example.mykitchen.R;
 import com.example.mykitchen.domain.Products;
+import com.example.mykitchen.fragment.AddDeviceFragment;
+import com.example.mykitchen.fragment.AddProductFragment;
 
 import java.util.List;
 
@@ -55,7 +59,9 @@ public class ProductsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         Products products = NoDB.PRODUCTS_LIST.get(position);
         ((ProductsAdapter.MyHolder)holder).tvName.setText(products.getName());
-        ((ProductsAdapter.MyHolder)holder).tvWeight.setText(products.getWeight());
+        ((ProductsAdapter.MyHolder)holder).tvWeight.setText(String.valueOf(products.getWeight()) + " (гр)");
+
+
 
     }
 

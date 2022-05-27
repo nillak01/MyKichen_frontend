@@ -1,17 +1,11 @@
 package com.example.mykitchen;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import com.example.mykitchen.NoDB.NoDB;
-import com.example.mykitchen.adapter.DeviceAdapter;
-import com.example.mykitchen.rest.DeviceApiVolley;
-import com.example.mykitchen.rest.MyKitchenApiVolley;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new DeviceApiVolley(this).fillDeviceByMy(true);
 
 
         btn_recipe = findViewById(R.id.btn_recipe);

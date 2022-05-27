@@ -1,6 +1,8 @@
 package com.example.mykitchen.domain;
 
-public class Products {
+import java.io.Serializable;
+
+public class Products implements Serializable {
 
     private int id;
 

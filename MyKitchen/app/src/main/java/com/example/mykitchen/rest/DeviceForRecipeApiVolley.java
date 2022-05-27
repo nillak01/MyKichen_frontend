@@ -10,8 +10,12 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.mykitchen.NoDB.NoDB;
+import com.example.mykitchen.domain.Device;
 import com.example.mykitchen.domain.DeviceForRecipe;
+import com.example.mykitchen.domain.Recipe;
 import com.example.mykitchen.domain.mapper.DeviceForRecipeMapper;
+import com.example.mykitchen.domain.mapper.DeviceMapper;
+import com.example.mykitchen.domain.mapper.RecipeMapper;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -50,7 +54,11 @@ public class DeviceForRecipeApiVolley implements DeviceForRecipeApi{
 
                                 JSONObject jsonObject = response.getJSONObject(i);
 
-                                DeviceForRecipe deviceForRecipe = new DeviceForRecipeMapper().deviceForRecipeFromJson(jsonObject);
+                                Recipe recipe = new RecipeMapper().recipeFromDFRJson(jsonObject);
+
+                                Device device = new DeviceMapper().deviceFromDFRJson(jsonObject);
+
+                                DeviceForRecipe deviceForRecipe = new DeviceForRecipeMapper().deviceForRecipeFromJson(jsonObject, recipe, device);
                                 NoDB.DEVICE_FOR_RECIPE_LIST.add(deviceForRecipe);
                             }
                             Log.d("DEVICE_FOR_RECIPE_LIST", NoDB.DEVICE_FOR_RECIPE_LIST.toString());
@@ -99,8 +107,11 @@ public class DeviceForRecipeApiVolley implements DeviceForRecipeApi{
                             for (int i = 0; i < response.length(); i++) {
 
                                 JSONObject jsonObject = response.getJSONObject(i);
+                                Recipe recipe = new RecipeMapper().recipeFromDFRJson(jsonObject);
 
-                                DeviceForRecipe deviceForRecipe = new DeviceForRecipeMapper().deviceForRecipeFromJson(jsonObject);
+                                Device device = new DeviceMapper().deviceFromDFRJson(jsonObject);
+
+                                DeviceForRecipe deviceForRecipe = new DeviceForRecipeMapper().deviceForRecipeFromJson(jsonObject,recipe,device);
                                 NoDB.DEVICE_FOR_RECIPE_LIST.add(deviceForRecipe);
                             }
                             Log.d("DEVICE_FOR_RECIPE_LIST", NoDB.DEVICE_FOR_RECIPE_LIST.toString());

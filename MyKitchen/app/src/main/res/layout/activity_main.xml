@@ -10,40 +10,45 @@
     android:orientation="vertical">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/btn_recipe"
-        android:background="@drawable/ic_btn_back"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="12dp"
+        android:layout_marginTop="700dp"
+        android:background="@drawable/my_border"
+        android:gravity="center"
         android:text="@string/recipes"
-        android:textColor="@color/orange"
+        android:textColor="@color/grey_good"
         android:textSize="18sp"
-        android:gravity="center"
-        android:layout_marginTop="700dp"/>
+        android:textStyle="italic"/>
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/btn_my_recipes"
-        android:background="@drawable/ic_btn_back"
-        android:layout_gravity="center"
-        android:layout_margin="12dp"
-        android:text="@string/my_recipes"
-        android:textColor="@color/pink_light"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:layout_marginTop="700dp"/>
-    <Button
-        android:layout_width="wrap_content"
+        android:layout_width="147dp"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_my_kichen"
-        android:background="@drawable/ic_btn_back"
         android:layout_gravity="center"
         android:layout_margin="12dp"
-        android:text="@string/my_kichen"
-        android:textColor="@color/black"
+        android:layout_marginTop="700dp"
+        android:background="@drawable/my_border"
+        android:gravity="center"
+        android:text="@string/my_recipes"
+        android:textColor="@color/grey_good"
         android:textSize="18sp"
-        android:gravity="center" />
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/btn_my_kichen"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        android:background="@drawable/my_border"
+        android:gravity="center"
+        android:text="@string/my_kichen"
+        android:textColor="@color/grey_good"
+        android:textSize="18sp"
+        android:textStyle="italic"/>
 
 
 

@@ -24,13 +24,13 @@ public class MyKitchenActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()){
-                    case R.id.btn_my_products:
-                        Intent intent = new Intent(MyKitchenActivity.this , MyProductsActivity.class);
-                        MyKitchenActivity.this.startActivity(intent);
-                        break;
                     case R.id.btn_my_devices:
                         Intent intent1 = new Intent(MyKitchenActivity.this , MyDeviceActivity.class);
                         MyKitchenActivity.this.startActivity(intent1);
+                        break;
+                    case R.id.btn_my_products:
+                        Intent intent = new Intent(MyKitchenActivity.this , MyProductsActivity.class);
+                        MyKitchenActivity.this.startActivity(intent);
                         break;
 
                 }

@@ -8,16 +8,9 @@
     android:clickable="true"
     android:focusable="true"
     tools:context=".AllRecipeActivity"
-    android:background="@color/pink_norm">
+    android:background="@color/pink_norm"
+    android:id="@+id/fl_all_recipe">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/btn_add"
-        android:background="@drawable/ic_baseline_arrow_back_24"
-        android:layout_gravity="left|top"
-        android:layout_marginRight="12dp"
-        android:layout_marginTop="12dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,9 +24,9 @@
             android:layout_margin="12dp"
             android:layout_weight="1"
             android:text="@string/app_name"
-            android:textColor="@color/white"
+            android:textColor="@color/grey_good"
             android:textSize="35sp"
-            android:textStyle="bold" />
+            android:textStyle="italic" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_all_recipe"
@@ -44,17 +37,6 @@
             android:padding="12dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
-        <Button
-            android:id="@+id/btn_add_device"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|bottom"
-            android:layout_margin="12dp"
-            android:background="@drawable/ic_btn_back"
-            android:gravity="center"
-            android:text="@string/save"
-            android:textColor="@color/grey_good"
-            android:textSize="18sp" />
 
     </LinearLayout>
 

@@ -8,7 +8,8 @@
     android:clickable="true"
     android:focusable="true"
     tools:context=".MyProductsActivity"
-    android:background="@color/pink_norm">
+    android:background="@color/pink_norm"
+    android:id="@+id/fl_products">
 
 
 
@@ -27,7 +28,7 @@
             android:text="@string/app_name"
             android:textColor="@color/grey_good"
             android:textSize="35sp"
-            android:textStyle="bold" />
+            android:textStyle="italic" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_my_products"
@@ -39,16 +40,17 @@
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/btn_add_product"
-            android:background="@drawable/ic_btn_back"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="12dp"
+            android:background="@drawable/my_border"
+            android:gravity="center"
             android:text="@string/add"
             android:textColor="@color/grey_good"
             android:textSize="18sp"
-            android:gravity="center" />
+            android:textStyle="italic"/>
 
     </LinearLayout>
 

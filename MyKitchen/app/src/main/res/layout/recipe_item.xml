@@ -13,9 +13,10 @@
         android:gravity="center"
         android:padding="6dp"
         android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:textSize="24sp"
+        android:textStyle="italic"/>
     <TextView
-        android:id="@+id/tv_recipe_products"
+        android:id="@+id/tv_recipe_devices"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -23,7 +24,7 @@
         android:textColor="@color/black"
         android:textSize="18sp" />
     <TextView
-        android:id="@+id/tv_recipe_devices"
+        android:id="@+id/tv_recipe_products"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"

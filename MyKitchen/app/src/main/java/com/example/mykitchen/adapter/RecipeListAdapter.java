@@ -13,22 +13,25 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mykitchen.NoDB.NoDB;
 import com.example.mykitchen.R;
-import com.example.mykitchen.domain.Device;
-import com.example.mykitchen.fragment.AddDeviceFragment;
+import com.example.mykitchen.domain.Recipe;
+import com.example.mykitchen.fragment.MyRecipeFragment;
 
 import java.util.List;
 
-public class DeviceAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class RecipeListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
 
+    public static final String RECIPE = "Recipe";
     private final Context context;
     private final LayoutInflater layoutInflater;
-    private final List<Device> deviceList;
+    private final Recipe recipe;
 
-    public DeviceAdapter(Context context,  List<Device> deviceList) {
+    public RecipeListAdapter(Context context,  Recipe recipe) {
         this.context = context;
         this.layoutInflater = LayoutInflater.from(context);
-        this.deviceList = deviceList;
+        this.recipe = recipe;
+
     }
+
 
 
     private class MyHolder extends RecyclerView.ViewHolder{
@@ -39,7 +42,7 @@ public class DeviceAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         public MyHolder(@NonNull View itemView) {
             super(itemView);
 
-            tvName = itemView.findViewById(R.id.tv_device_name);
+            tvName = itemView.findViewById(R.id.tv_point);
         }
     }
 
@@ -47,15 +50,17 @@ public class DeviceAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = layoutInflater.inflate(R.layout.device_item, parent, false);
-        return new MyHolder(view);
+        View view = layoutInflater.inflate(R.layout.full_recipe_item, parent, false);
+        return new RecipeListAdapter.MyHolder(view);
+
     }
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
-        Device device = NoDB.DEVICE_LIST.get(position);
-        ((MyHolder)holder).tvName.setText(device.getName());
+        String[] all_points = new String[] {recipe.getPoint_1(), recipe.getPoint_2(), recipe.getPoint_3(), recipe.getPoint_4(),
+                recipe.getPoint_5(), recipe.getPoint_6(),recipe.getPoint_7(),recipe.getPoint_8(),recipe.getPoint_9(),recipe.getPoint_10()};
+        ((RecipeListAdapter.MyHolder)holder).tvName.setText(all_points[position]);
 
 
     }
@@ -63,7 +68,6 @@ public class DeviceAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     @Override
     public int getItemCount() {
 
-
-        return NoDB.DEVICE_LIST.size();
+        return 10;
     }
 }
